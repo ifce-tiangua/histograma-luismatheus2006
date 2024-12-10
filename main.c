@@ -7,6 +7,10 @@ int main(){
     int categoria,i = 0;
     int* vetor;
     scanf("%d", &categoria);
+    if(categoria == 0){
+        
+        return printf("vazio");
+    }
     vetor = malloc(categoria*sizeof(int));
     
     for(i; i < categoria; i++){
